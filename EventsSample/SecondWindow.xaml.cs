@@ -27,13 +27,8 @@ namespace EventsSample
 
         private void Refresh(object sender, RoutedEventArgs e)      //triggered when event in Main Window is invoked
         {
-            setNumber();          
+             label.Content = new Random().Next().ToString();   // produce random number on Refresh and display it on label
         }
         
-         void setNumber()   //just a method to produce random number on Refresh
-        {
-          //  Random random = new Random();          
-            label.Content = new Random().Next().ToString();
-        }
     }
 }
